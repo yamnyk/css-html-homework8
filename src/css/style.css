@@ -1,0 +1,57 @@
+body {
+    font-family:'Montserrat', sans-serif;
+}
+
+.container {
+    width: 1280px;
+    margin:  0 auto;
+}
+
+.head-sertiz {
+    background: url(../img/bg1.jpg) no-repeat;
+    background-size: cover;
+    height: 900px;
+}
+
+.head-text {
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.head-subtext {
+    color: white;
+    font-size: 18px;
+}
+
+.head-color-logo {
+    height: 125px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid white;
+}
+
+.col-logo-fw {
+    color: #f1ad1d;
+    background-color: #fff;
+    font-size: 54px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-logo-ow {
+    color: white;
+    font-size: 54px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 25px;
+}
