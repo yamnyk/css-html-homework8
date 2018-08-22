@@ -98,5 +98,23 @@ body {
 }
 
 .image-block {
-    height: 420px;
+    height: 450px;
+}
+
+.bg-1 {
+    width: 100%;
+    background: url('../img/bg2.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.bg-2 {
+    width: 100%;
+    background: url('../img/bg3.jpg')no-repeat center;
+    background-size: cover;
+}
+
+.bg-3 {
+    width: 100%;
+    background: url('../img/bg4.jpg')no-repeat center;
+    background-size: cover;
 }
