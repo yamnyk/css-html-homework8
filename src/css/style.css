@@ -120,9 +120,24 @@ body {
 }
 
 .ib-text-head {
+    align-items: center;
     color: white;
     font-size: 22px;
     font-weight: 700;
+    text-align: center;
+    padding: 150px;
+}
+
+.ib-text-head:after {
+    content: '';
+    display: inline-block;
+    height: 1px;
+    border: 1px solid transparent;
+    border-top-color: #f1ad1d;
+    border-bottom-color: #f1ad1d;
+    background-color: #f1ad1d;
+    width: 60px;
+    margin: 60px;
 }
 
 .text-yellow {
