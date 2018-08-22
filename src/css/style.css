@@ -118,3 +118,13 @@ body {
     background: url('../img/bg4.jpg')no-repeat center;
     background-size: cover;
 }
+
+.ib-text-head {
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.text-yellow {
+    color: #f1ad1d;
+}
