@@ -42,6 +42,10 @@ body {
     margin-bottom: 140px;
 }
 
+.parallax {
+    perspective: 1880px;
+}
+
 .col-logo-fw {
     color: #f1ad1d;
     background-color: #fff;
@@ -103,24 +107,29 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 450px;
+    overflow: hidden;
 }
 
 .bg-1 {
     width: 100%;
+    overflow: hidden;
     background: url('../img/bg2.jpg') no-repeat center fixed;
     background-size: cover;
+    transform: translateZ(-200px) scale(1.18);
 }
 
 .bg-2 {
     width: 100%;
     background: url('../img/bg3.jpg')no-repeat center fixed;
     background-size: cover;
+    transform: translateZ(-200px) scale(1.18);
 }
 
 .bg-3 {
     width: 100%;
     background: url('../img/bg4.jpg')no-repeat center fixed;
     background-size: cover;
+    transform: translateZ(-100px) scale(1.2);
 }
 
 .ib-text-head {
@@ -205,3 +214,4 @@ body {
     height: 49px;
     background-position: -10px -192px;
 }
+
