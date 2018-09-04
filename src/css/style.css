@@ -8,7 +8,7 @@ body {
 }
 
 .head-sertiz {
-    background: url(../img/bg1.jpg) no-repeat center;
+    background: url(../img/bg1.jpg) no-repeat center fixed;
     background-size: cover;
     height: 900px;
     display: flex;
@@ -67,6 +67,7 @@ body {
 }
 
 .text-block {
+    height: 450px;
     text-align: center;
 }
 
@@ -98,24 +99,27 @@ body {
 }
 
 .image-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 450px;
 }
 
 .bg-1 {
     width: 100%;
-    background: url('../img/bg2.jpg') no-repeat center;
+    background: url('../img/bg2.jpg') no-repeat center fixed;
     background-size: cover;
 }
 
 .bg-2 {
     width: 100%;
-    background: url('../img/bg3.jpg')no-repeat center;
+    background: url('../img/bg3.jpg')no-repeat center fixed;
     background-size: cover;
 }
 
 .bg-3 {
     width: 100%;
-    background: url('../img/bg4.jpg')no-repeat center;
+    background: url('../img/bg4.jpg')no-repeat center fixed;
     background-size: cover;
 }
 
@@ -125,7 +129,7 @@ body {
     font-size: 22px;
     font-weight: 700;
     text-align: center;
-    padding: 150px;
+    text-transform: uppercase;
 }
 
 .ib-text-head:after {
@@ -142,4 +146,62 @@ body {
 
 .text-yellow {
     color: #f1ad1d;
+}
+
+.ib-subtext {
+    text-align: center;
+}
+
+.subtext-white {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.subtext-yellow {
+    color: #f1ad1d;
+}
+
+.ib-st-link {
+    text-decoration: none;
+    color: #f1ad1d;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.ib-logos {
+    width: 840px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.sprite {
+    background: url(../img/spritesheet.png) no-repeat;
+    display: block;
+}
+
+.sprite-Layer-17 {
+    width: 172px;
+    height: 42px;
+    background-position: -10px -10px;
+}
+
+.sprite-Layer-18 {
+    width: 207px;
+    height: 28px;
+    background-position: -10px -72px;
+}
+
+.sprite-logo-3 {
+    width: 141px;
+    height: 52px;
+    background-position: -10px -120px;
+}
+
+.sprite-logo-8 {
+    width: 135px;
+    height: 49px;
+    background-position: -10px -192px;
 }
