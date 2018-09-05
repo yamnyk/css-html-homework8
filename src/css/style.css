@@ -2,15 +2,38 @@ body {
     font-family:'Montserrat', sans-serif;
 }
 
-.container {
-    width: 1280px;
-    margin:  0 auto;
+.main-container {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+}
+
+.section {
+    position: relative;
+}
+
+.parallax:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: -4px;
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+}
+
+.section-container {
+    padding: 500px 82px 100px 82px;
+}
+
+.text-yellow {
+    color: #f1ad1d;
 }
 
 .head-sertiz {
-    background: url(../img/bg1.jpg) no-repeat center fixed;
-    background-size: cover;
-    height: 900px;
     display: flex;
     align-items: flex-end;
 }
@@ -42,10 +65,6 @@ body {
     margin-bottom: 140px;
 }
 
-.parallax {
-    perspective: 1880px;
-}
-
 .col-logo-fw {
     color: #f1ad1d;
     background-color: #fff;
@@ -70,8 +89,15 @@ body {
     padding: 0 40px 0 25px;
 }
 
+.bg-head:after {
+    background: url(../img/bg1.jpg) no-repeat;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
 .text-block {
-    height: 450px;
+    padding: 150px 0 125px;
+    background-color: #ffffff;
     text-align: center;
 }
 
@@ -80,7 +106,6 @@ body {
     font-weight: 700;
     line-height: 15px;
     text-transform: uppercase;
-    padding-top: 110px;
 }
 
 .tb-subhead {
@@ -99,45 +124,21 @@ body {
     border-bottom-color: #f1ad1d;
     background-color: #f1ad1d;
     width: 60px;
-    margin: 50px 0 150px 0;
+    margin-top: 50px;
 }
 
 .image-block {
+    padding: 200px 0 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 450px;
-    overflow: hidden;
-}
-
-.bg-1 {
-    width: 100%;
-    overflow: hidden;
-    background: url('../img/bg2.jpg') no-repeat center fixed;
-    background-size: cover;
-    transform: translateZ(-200px) scale(1.18);
-}
-
-.bg-2 {
-    width: 100%;
-    background: url('../img/bg3.jpg')no-repeat center fixed;
-    background-size: cover;
-    transform: translateZ(-200px) scale(1.18);
-}
-
-.bg-3 {
-    width: 100%;
-    background: url('../img/bg4.jpg')no-repeat center fixed;
-    background-size: cover;
-    transform: translateZ(-100px) scale(1.2);
+    text-align: center;
 }
 
 .ib-text-head {
-    align-items: center;
     color: white;
     font-size: 22px;
     font-weight: 700;
-    text-align: center;
     text-transform: uppercase;
 }
 
@@ -151,10 +152,6 @@ body {
     background-color: #f1ad1d;
     width: 60px;
     margin: 60px;
-}
-
-.text-yellow {
-    color: #f1ad1d;
 }
 
 .ib-subtext {
@@ -186,32 +183,46 @@ body {
     margin: 0 auto;
 }
 
-.sprite {
+.bg-1:after {
+    background: url('../img/bg2.jpg') no-repeat center fixed;
+    /*background-size: cover;*/
+}
+
+.bg-2:after {
+    background: url('../img/bg3.jpg') no-repeat center fixed;
+    /*background-size: cover;*/
+}
+
+.bg-3:after {
+    background: url('../img/bg4.jpg') no-repeat center fixed;
+    /*background-size: cover;*/
+}
+
+.ib-featured-logos {
     background: url(../img/spritesheet.png) no-repeat;
     display: block;
 }
 
-.sprite-Layer-17 {
+.featured-logo--Layer-17 {
     width: 172px;
     height: 42px;
     background-position: -10px -10px;
 }
 
-.sprite-Layer-18 {
+.featured-logo-Layer-18 {
     width: 207px;
     height: 28px;
     background-position: -10px -72px;
 }
 
-.sprite-logo-3 {
+.featured-logo-logo-3 {
     width: 141px;
     height: 52px;
     background-position: -10px -120px;
 }
 
-.sprite-logo-8 {
+.featured-logo-logo-8 {
     width: 135px;
     height: 49px;
     background-position: -10px -192px;
 }
-
