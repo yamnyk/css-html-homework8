@@ -184,17 +184,17 @@ body {
 }
 
 .bg-1:after {
-    background: url('../img/bg2.jpg') no-repeat center fixed;
+    background: url('../img/bg2.jpg') no-repeat center;
     /*background-size: cover;*/
 }
 
 .bg-2:after {
-    background: url('../img/bg3.jpg') no-repeat center fixed;
+    background: url('../img/bg3.jpg') no-repeat center;
     /*background-size: cover;*/
 }
 
 .bg-3:after {
-    background: url('../img/bg4.jpg') no-repeat center fixed;
+    background: url('../img/bg4.jpg') no-repeat center;
     /*background-size: cover;*/
 }
 

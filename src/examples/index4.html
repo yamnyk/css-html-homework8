@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title> Pure CSS Parallax Scrolling </title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .container {
+        perspective: 1px;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    section {
+        position: relative;
+        height: 100vh;
+        transform-style: preserve-3d;
+    }
+
+    .header {
+        position: relative;
+        z-index: 5;
+    }
+
+    .features {
+        position: relative;
+        z-index: 3;
+    }
+
+    .base,
+    .back {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .header .base {
+        background-color: #00c;
+    }
+
+    .base {
+        transform: translateZ(0);
+        z-index: 4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .box {
+        width: 300px;
+        height: 300px;
+        border-radius: 5px;
+        background-color: #fff;
+        text-align: center;
+    }
+
+    .back {
+        transform: translateZ(-1px) scale(2);
+        background-image: url(https://images.unsplash.com/photo-1434725039720-aaad6dd32dfe);
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .team {
+        z-index: 5;
+        background-color: #c00;
+    }
+
+</style>
+
+<body>
+<div class="container">
+    <section class="header">
+        <div class="base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto aut cum cupiditate dicta earum enim expedita hic, impedit ipsa ipsum iure, laborum maiores minima modi natus necessitatibus nemo perspiciatis quo reiciendis rem sed totam unde vel voluptates. Animi atque autem corporis deleniti distinctio dolor dolore dolorum eligendi eveniet expedita fugiat in laborum maiores, minus nam nesciunt nostrum officiis optio pariatur porro possimus quae quaerat quam quasi qui quibusdam quidem ratione rem repellendus repudiandae sequi ullam velit voluptatum! Aut autem, corporis cum cupiditate delectus distinctio, doloribus earum eos exercitationem explicabo facilis harum id incidunt modi molestias nesciunt nihil numquam odit officia, perferendis perspiciatis placeat porro quaerat qui quos repellat rerum. Adipisci alias aliquam architecto beatae commodi consequatur delectus deserunt dolore dolorem est, expedita explicabo fuga fugit hic illo impedit ipsam ipsum itaque libero minima molestias nihil odit porro quam quas quis quod repudiandae sed sint suscipit tempora temporibus veritatis vero! Accusantium cum ea eos fugiat obcaecati officia omnis repellat? Architecto distinctio eius fuga harum illum in labore, natus, repudiandae rerum sequi soluta, veritatis vero vitae. Ab at atque consectetur cum debitis dolorem dolores earum, eius error est eum facere illo iusto laboriosam molestias nam pariatur, perspiciatis quasi reiciendis repellendus sed sequi tempore ullam vitae voluptate. Accusantium amet assumenda autem culpa dignissimos et fuga id illum, in iure magni maiores minima minus mollitia necessitatibus neque omnis placeat quae quaerat quod ratione reiciendis reprehenderit sint sit velit voluptate voluptatum! Ab accusantium blanditiis consequuntur culpa deserunt dicta dolore, dolores error esse fugiat id inventore, laboriosam laudantium magni maxime nihil nobis optio quae quia quis quisquam quo sapiente sequi totam velit! Ad animi architecto consequuntur, deserunt dicta dolore dolorem eos error fugiat fugit hic impedit incidunt iste itaque neque nihil nisi odit officiis quaerat quod, quos sint, tenetur? Architecto hic modi omnis repellendus vel.</div>
+    </section>
+    <section class="features">
+        <div class="base">
+            <div class="box">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore explicabo laboriosam maxime obcaecati vel? Consectetur dolores itaque magnam ratione sit?
+            </div>
+        </div>
+        <div class="back">back</div>
+    </section>
+    <section class="team">
+        <div class="base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet architecto aspernatur aut cupiditate libero quasi tenetur? Accusamus amet dignissimos eos facilis incidunt inventore ipsa maxime molestiae optio, praesentium. Ab accusamus aliquam aperiam consequatur culpa cum cupiditate, delectus deserunt distinctio enim est eveniet excepturi expedita illum ipsam itaque iure mollitia neque nostrum numquam optio possimus quibusdam quidem quisquam quo ratione recusandae rem repudiandae rerum sapiente sed sint unde ut velit veritatis voluptate voluptates. Ab assumenda, commodi consequuntur, cum dolorem doloremque fugiat fugit inventore mollitia neque perspiciatis provident quia recusandae reprehenderit repudiandae, sunt tempore tenetur vero voluptatem voluptates! Accusamus animi cumque deserunt enim esse et eum excepturi impedit inventore laboriosam laudantium mollitia nam natus nemo odio qui, quidem quisquam quos repellendus sunt tempore unde ut, velit veritatis voluptate! Accusantium amet atque consequatur cumque, eaque illum ipsam ipsum magni maiores quae quaerat quam repellat reprehenderit saepe sapiente, sit tenetur unde vitae, voluptate voluptatum. Accusamus adipisci animi architecto beatae corporis cum cumque dicta dignissimos dolore dolorum eos eveniet facilis id iure laborum magnam nesciunt odio perspiciatis quam quas quisquam quod ratione, sequi sit ut veniam, voluptas? Adipisci aliquam architecto blanditiis dicta dolore doloribus, eaque eligendi est eveniet exercitationem fuga incidunt laboriosam laborum magni minima, nobis odit omnis placeat quasi ratione rerum saepe sed sunt tempora ullam ut vel voluptatibus. Amet assumenda aut dolorum eum facilis, minima quidem. Aut blanditiis odit provident quasi tempore. Aut eius esse explicabo repellat sint soluta suscipit ullam ut vel voluptate. Atque deleniti doloribus, earum eos, ex excepturi, harum ipsum iste magnam nemo optio perspiciatis placeat quos recusandae sint suscipit vero? Atque blanditiis eius eveniet exercitationem maxime nostrum omnis quibusdam quod recusandae sint soluta, voluptate voluptatem. Adipisci culpa cumque ducimus, ea earum esse eveniet ex facere impedit, incidunt, iure molestias natus nisi officiis optio possimus quam quasi similique voluptas.</div>
+    </section>
+</div>
+</body>
+
+</html>
